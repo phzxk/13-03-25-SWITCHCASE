@@ -1,19 +1,35 @@
+<!-- A linha abaixo define o documento como html -->
 <!DOCTYPE html>
+<!-- A linha abaixo inicia a tag html e define o idioma como ingles (en) -->
 <html lang="en">
+    <!-- A linha abaixo inici  tag head (cabeçalho)-->
 <head>
+    <!-- a linha abixo declara a tag meta como atributo charset, que é a definição do tipo de caracter da página,
+      ou seja characteresestão definidos para UTF-8 (padrão internacional) -->
     <meta charset="UTF-8">
+    <!-- a linha abaixo declara a tag meta com atributos:
+     name (que define o valor do tipo de visualização da tecla) e
+     content (que define o valor do tipo de vizualização da tecla) ou
+     seja a largura (width) será de acordo com a largura do dispositivo (device), onde a escala inicial será de 1 (1 po 1) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch/Case</title>
+    <title>Do While</title>
+    <!-- a linha abixo importa o arquivo estilos.css, que vai receber
+     os estilos css da página -->
+    <link rel="stylesheet" href="./estilos.css ">
+
 </head>
+
 <body>
-    <label for="txtCor">Digite aqui a cor do fundo :</label>
-    <input type="text" id="txtCor" />
-    <button onclick="colorir()">Colorir Fundo:</button>
-    <br />
-    <label for="txtCorTexto">Digite aqui a cor do texto:</label>
-    <input type="text" id="txtCorTexto" />
-    <button onclick="colorirTexto()">Colorir Texto:</button>
-    
-    <script src="./switchcase.js"></script>
+    <label for="cbxMarcarTempo"class="vermelho">Marcar Tempo?</label>
+
+<input type="checkbox" id="cbxMarcarTempo" />
+<!-- a linha abaixo insere uma quebra de linha na página -->
+<br /> 
+<!-- a linha abixo insere um elemento pra podermos inserir a hora
+ sem prejudicar todo o texto da página, sem prejudicar outros elemenos da página -->
+<div id="div_hora"></div>
+<div id="div_minuto"></div>
+<div id="div_segundo"></div>
+        <script src="./dowhile.js"></script>
 </body>
 </html>
